@@ -1,6 +1,7 @@
 # Applied AI Projects
 
-Selected projects from my MSc in Applied Artificial Intelligence at Luleå University of Technology.
+Selected projects from my MSc in Applied Artificial Intelligence at Luleå University of Technology, plus
+cloud and NVIDIA Deep Learning Institute coursework.
 Each folder has its own README with setup, method and results. My production work in industry (AI agents,
 LLM/RAG applications and voice agents at BR Technologies) is proprietary and not included here.
 
@@ -13,6 +14,12 @@ LLM/RAG applications and voice agents at BR Technologies) is proprietary and not
 | [Breast cancer histopathology](breast-cancer-histopathology/) | AI within the Healthcare System | Benign vs malignant classification on BreaKHis 400× under a patient-disjoint protocol, across three model tiers and five seeds. | PFTAS + SVM, EfficientNetV2-S, CBAM |
 | [Credit card fraud detection](credit-card-fraud-detection/) | Data Science Programming | Detects fraud in highly imbalanced transactions, comparing unsupervised, supervised and hybrid models at fixed false-positive rates. | Autoencoder, VAE, One-Class SVM, XGBoost, stacking |
 | [LLM kinship reasoning](llm-kinship-reasoning/) | Applied AI, Knowledge Management and Reasoning | Compares direct LLM answers with a knowledge-graph pipeline (triple extraction, graph path search, constrained answering) on multi-hop CLUTRR questions. | Local LLM (Qwen2.5-3B), knowledge graphs, NetworkX |
+
+## Cloud and big data
+
+| Project | Course | What it does | Methods |
+|---|---|---|---|
+| [Code clone detection at scale](code-clone-detection-at-scale/) | Applied Cloud Computing and Big Data (BTH) | Finds duplicated code across large Java systems in a containerised pipeline; I added indexing, a shared connection, stage-level monitoring and a separate monitoring service, and analysed scaling behaviour. | Clojure, MongoDB, Docker Compose |
 
 ## NVIDIA Deep Learning Institute
 

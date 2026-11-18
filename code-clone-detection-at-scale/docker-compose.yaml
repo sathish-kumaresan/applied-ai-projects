@@ -1,0 +1,65 @@
+# Docker Compose for All-At-Once Code Clone Detection
+
+services:
+  mongo:
+    image: mongo
+    container_name: mongo
+    restart: always
+    command: --quiet --syslog
+    networks:
+      - app-network
+    ports:
+      - "27017:27017"
+    expose:
+      - "27017"
+    volumes:
+      - mongo_data:/data/db
+      - mongo_config:/data/configdb
+
+  cljdetector:
+    build:
+      context: ./containers/cljdetector
+      dockerfile: Dockerfile
+    container_name: cljdetector
+    ports:
+      - "8081:8081"
+    networks:
+      - app-network
+    environment:
+      DBHOST: mongo
+      SOURCEDIRtest: "/usr/src/app/test/data"
+      SOURCEDIRant: "/QualitasCorpus/QualitasCorpus-20130901r/Systems/ant"
+      SOURCEDIReclipse: "/QualitasCorpus/QualitasCorpus-20130901r/Systems/eclipse_SDK"
+      SOURCEDIR: "/QualitasCorpus/QualitasCorpus-20130901r/Systems/eclipse_SDK"
+      CHUNKSIZE: 20
+    depends_on:
+      - mongo
+    volumes:
+      - ./containers/cljdetector:/usr/src/app
+      - qc-volume:/QualitasCorpus
+
+  monitor-tool:
+    build:
+      context: ./containers/monitor-tool
+    container_name: monitor-tool
+    ports:
+      - "9090:9090"
+    environment:
+      DBHOST: mongo
+    depends_on:
+      - mongo
+    networks:
+      - app-network
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  qc-volume:
+    external: true
+  mongo_data:
+  mongo_config:
+
+networks:
+  app-network:
+    driver: bridge
+
