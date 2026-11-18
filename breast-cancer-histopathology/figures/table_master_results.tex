@@ -1,0 +1,31 @@
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{l ccccc}
+\toprule
+Model & AUROC & Sens. & Spec. & F1 & Acc. \\
+\midrule
+\multicolumn{6}{l}{\textit{Honest (disjoint) -- Image level}} \\
+PFTAS + RBF SVM & 0.720 ± 0.054 & 0.932 ± 0.015 & 0.238 ± 0.114 & 0.752 ± 0.024 & 0.641 ± 0.046 \\
+EfficientNetV2-S & 0.893 ± 0.020 & 0.939 ± 0.042 & 0.722 ± 0.046 & 0.877 ± 0.013 & 0.848 ± 0.014 \\
+EfficientNetV2-S + CBAM & 0.884 ± 0.021 & 0.897 ± 0.039 & 0.748 ± 0.034 & 0.863 ± 0.018 & 0.834 ± 0.020 \\
+\midrule
+\multicolumn{6}{l}{\textit{Honest (disjoint) -- Patient level}} \\
+PFTAS + RBF SVM & 0.812 ± 0.100 & 0.945 ± 0.045 & 0.233 ± 0.133 & 0.801 ± 0.043 & 0.694 ± 0.069 \\
+EfficientNetV2-S & 0.939 ± 0.021 & 0.945 ± 0.045 & 0.800 ± 0.067 & 0.920 ± 0.033 & 0.894 ± 0.044 \\
+EfficientNetV2-S + CBAM & 0.909 ± 0.014 & 0.891 ± 0.036 & 0.833 ± 0.000 & 0.899 ± 0.021 & 0.871 ± 0.024 \\
+\midrule
+\multicolumn{6}{l}{\textit{Provided (leaked) -- Image level}} \\
+PFTAS + RBF SVM & 0.848 ± 0.047 & 0.933 ± 0.009 & 0.514 ± 0.162 & 0.863 ± 0.028 & 0.798 ± 0.049 \\
+EfficientNetV2-S & 0.993 ± 0.003 & 0.977 ± 0.007 & 0.942 ± 0.031 & 0.975 ± 0.005 & 0.966 ± 0.007 \\
+EfficientNetV2-S + CBAM & 0.983 ± 0.013 & 0.952 ± 0.052 & 0.922 ± 0.042 & 0.956 ± 0.029 & 0.942 ± 0.036 \\
+\midrule
+\multicolumn{6}{l}{\textit{Provided (leaked) -- Patient level}} \\
+PFTAS + RBF SVM & 0.932 ± 0.043 & 0.961 ± 0.021 & 0.633 ± 0.145 & 0.908 ± 0.037 & 0.863 ± 0.058 \\
+EfficientNetV2-S & 1.000 ± 0.000 & 0.996 ± 0.007 & 1.000 ± 0.000 & 0.998 ± 0.004 & 0.997 ± 0.005 \\
+EfficientNetV2-S + CBAM & 0.997 ± 0.003 & 0.971 ± 0.037 & 0.975 ± 0.020 & 0.980 ± 0.018 & 0.972 ± 0.024 \\
+\bottomrule
+\end{tabular}
+\caption{Five-seed mean $\pm$ std for the three model architectures under both evaluation protocols. ``Acc.'' is plain accuracy computed from the summed per-seed confusion matrix.}
+\label{tab:master}
+\end{table}

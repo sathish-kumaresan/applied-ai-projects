@@ -1,0 +1,15 @@
+\begin{tabular}{lp{10.5cm}}
+\toprule
+Part & Setting \\
+\midrule
+Candidate step & red hue $[0,10]\cup[170,180]$, saturation $\ge 120$, value $\ge 70$; minimum area 40 px; height $\ge 1.2\times$ width; at most 6 candidates \\
+Joining hose-split pieces & gap $\le 0.2\times$ body height, width $\le 1.5\times$ body width \\
+Crop around a box & $+15\%$ sides, $+20\%$ top, $+5\%$ bottom \\
+SIFT & contrast threshold 0.02; crops resized to height 160 px; ratio test 0.8; RANSAC similarity transform, 4 px; score = inliers / 15, capped at 1 \\
+DINOv2 & dinov2\_vits14, frozen; CLS token of a $112\times56$ px crop; anchors also embedded at heights 40, 70, 112, 200 px; score = (max cosine + 1) / 2 \\
+Depth cues & relief $\ge 100$ mm or plane RMS $\ge 200$ mm; height 0.45--1.0 m; focal length 306.1 px \\
+Depth pairing & nearest depth frame in time, at most 100 ms apart \\
+Threshold rule & highest recall on \texttt{test} with precision $\ge 0.75$ \\
+Cue penalty options & 0.05, 0.1, 0.2 per failed check, or reject (veto); chosen on dev \\
+\bottomrule
+\end{tabular}

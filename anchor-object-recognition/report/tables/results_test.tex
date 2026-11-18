@@ -1,0 +1,13 @@
+\begin{tabular}{lrrrrrrr}
+\toprule
+System & Precision & Recall & TP & FP & FN & Loc.\ success & ms/frame \\
+\midrule
+HSV histogram (baseline) & 0.84 & 1.00 & 54 & 10 & 0 & 84\% (54/64) & 5 \\
+HSV + cues & 0.92 & 1.00 & 54 & 5 & 0 & 92\% (54/59) & 5 \\
+SIFT & 0.49 & 0.83 & 45 & 46 & 9 & 49\% (45/91) & 18 \\
+SIFT + cues & 0.95 & 0.96 & 52 & 3 & 2 & 95\% (52/55) & 18 \\
+DINOv2 & 0.88 & 0.96 & 52 & 7 & 2 & 88\% (52/59) & 123 \\
+DINOv2 + cues (final) & 0.95 & 1.00 & 54 & 3 & 0 & 95\% (54/57) & 123 \\
+candidates + cues, no matcher & 0.95 & 0.96 & 52 & 3 & 2 & 95\% (52/55) & 5 \\
+\bottomrule
+\end{tabular}

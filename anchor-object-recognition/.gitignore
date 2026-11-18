@@ -1,0 +1,23 @@
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Raw source assets: retained locally
+/data_raw/
+/anchors_raw/
+
+# Generated demo videos
+/results/*.mp4
+
+# LaTeX build files
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz

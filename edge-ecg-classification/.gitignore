@@ -1,0 +1,36 @@
+
+# Local datasets
+/data/
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Secrets
+.env
+.env.*
+
+# LaTeX build files
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Trained checkpoint binaries
+/max78002/quantization_output/
+/results/runs/**/model.pt
+
+# Generated embedded-project IDE settings and logs
+/max78002/synthesis_output/ecg/.cproject
+/max78002/synthesis_output/ecg/.project
+/max78002/synthesis_output/ecg/.settings/
+/max78002/synthesis_output/ecg/.vscode/
+/max78002/synthesis_output/ecg/ecg.launch
+/max78002/synthesis_output/ecg/log.txt

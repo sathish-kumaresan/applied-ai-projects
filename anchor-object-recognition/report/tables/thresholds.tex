@@ -1,0 +1,13 @@
+\begin{tabular}{lrl}
+\toprule
+System & Decision threshold $\tau$ & Cue handling \\
+\midrule
+HSV histogram (baseline) & 0.33 & -- \\
+HSV + cues & 0.33 & penalty 0.05 \\
+SIFT & 0.00 & -- \\
+SIFT + cues & 0.00 & veto \\
+DINOv2 & 0.78 & -- \\
+DINOv2 + cues (final) & 0.76 & penalty 0.05 \\
+candidates + cues, no matcher & 1.00 & penalty 0.05 \\
+\bottomrule
+\end{tabular}
