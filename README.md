@@ -16,10 +16,15 @@ LLM/RAG applications and voice agents at BR Technologies) is proprietary and not
 
 ## NVIDIA Deep Learning Institute
 
-[nvidia-dli-rag-agents](nvidia-dli-rag-agents/) holds my completed work for **Building RAG Agents with LLMs**, in four stages:
-LLM endpoints and LangChain (LCEL), stateful chains and summarization, embeddings and FAISS vector stores, and a full
-RAG pipeline with LLM-as-judge evaluation. I also hold NVIDIA DLI certificates in Generative AI with Diffusion
-Models, Building LLM Applications with Prompt Engineering, and Disaster Risk Monitoring Using Satellite Imagery.
+Completed work from NVIDIA DLI courses (course material © NVIDIA):
+
+| Project | Course | What it covers |
+|---|---|---|
+| [RAG agents with LangChain and NIM](rag-agents-langchain-nim/) | Building RAG Agents with LLMs | LLM endpoints and LCEL chains, stateful agents, running summaries, embeddings and FAISS, and a RAG pipeline over arXiv papers with LLM-as-judge evaluation |
+| [Text-to-image diffusion](text-to-image-diffusion/) | Generative AI with Diffusion Models | A U-Net and DDPM built from scratch in PyTorch, architecture optimizations, classifier-free guidance and CLIP text conditioning |
+| [Flood detection from satellite imagery](flood-detection-satellite-imagery/) | Disaster Risk Monitoring Using Satellite Imagery | Sentinel-1 SAR data, DALI preprocessing, U-Net transfer learning with TAO, TensorRT and Triton deployment |
+
+I also hold the NVIDIA DLI certificate in Building LLM Applications with Prompt Engineering.
 
 ## Group work
 

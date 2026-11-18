@@ -1,7 +1,7 @@
-# Building RAG Agents with LLMs (NVIDIA Deep Learning Institute)
+# RAG Agents with LangChain and NVIDIA NIM
 
-My completed work for the NVIDIA DLI course **Building RAG Agents with Large Language Models**
-(certificate, November 2024). The course poses each step as an exercise. These scripts are my solutions,
+My completed work for the NVIDIA Deep Learning Institute course **Building RAG Agents with Large Language Models**
+(certificate, November 2024). Course material © NVIDIA. The course poses each step as an exercise. These scripts are my solutions,
 reorganised into four stages that build on each other, from calling an LLM endpoint to a full RAG pipeline
 with automatic evaluation.
 
@@ -31,9 +31,3 @@ Run the scripts from this folder. Stage 04 uses the index that stage 03 creates:
 python 03-embeddings-and-vector-stores/arxiv_vector_store.py   # writes docstore_index.tgz
 python 04-rag-pipeline/rag_over_arxiv_papers.py
 ```
-
-## Other NVIDIA DLI certificates
-
-- Generative AI with Diffusion Models (April 2025)
-- Building LLM Applications with Prompt Engineering (October 2025)
-- Disaster Risk Monitoring Using Satellite Imagery (March 2024)
