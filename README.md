@@ -19,7 +19,7 @@ LLM/RAG applications and voice agents at BR Technologies) is proprietary and not
 [nvidia-dli-rag-agents](nvidia-dli-rag-agents/) holds my completed work for **Building RAG Agents with LLMs**, in four stages:
 LLM endpoints and LangChain (LCEL), stateful chains and summarization, embeddings and FAISS vector stores, and a full
 RAG pipeline with LLM-as-judge evaluation. I also hold NVIDIA DLI certificates in Generative AI with Diffusion
-Models, Prompt Engineering with LLMs, and Disaster Risk Monitoring Using Satellite Imagery.
+Models, Building LLM Applications with Prompt Engineering, and Disaster Risk Monitoring Using Satellite Imagery.
 
 ## Group work
 

@@ -35,5 +35,5 @@ python 04-rag-pipeline/rag_over_arxiv_papers.py
 ## Other NVIDIA DLI certificates
 
 - Generative AI with Diffusion Models (April 2025)
-- Prompt Engineering with LLMs (October 2025)
+- Building LLM Applications with Prompt Engineering (October 2025)
 - Disaster Risk Monitoring Using Satellite Imagery (March 2024)
